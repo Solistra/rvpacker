@@ -25,7 +25,7 @@ rvpacker is bundled as a rubygem
 
 ... dependencies will be handled automatically.
 
-**Windows Users:** If `gem install rvpacker` complains about being unable to install psych, try downloading the rvpacker source and doing `bundle install`. That, for some reason, works. (Don't ask me, I think ruby is retarded here.) *Alternatively*, you can [download the Ruby DevKit](http://rubyinstaller.org/downloads) and install it by following [these instructions](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit) - this works for lots of users, but not for me personally, so you may still wind up having to do the bundle install trick.
+**Windows Users:** If `gem install rvpacker` complains about being unable to install psych, download the rvpacker source, `gem install bundler`, and run `bundle install` from the project directory. That, for some reason, works. (Don't ask me, I think ruby is retarded here.) It is possible to install Psych 2.0.0, but the "stock" version lacks some [necessary YAML generation tweaks](https://github.com/akesterson/rvpacker/blob/master/README.md#psych-200-dependency).
 
 Usage
 =====
