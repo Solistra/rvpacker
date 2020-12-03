@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby
 # -*- coding: utf-8 -*-
 
-require 'trollop'
+require 'optimist'
 require 'RGSS'
 
-opts = Trollop::options do
+opts = Optimist::options do
   opt :action, "Action to perform on project (unpack|pack)", :short => "a", :type => String
   opt :project, "RPG Maker Project directory", :short => "d", :type => String
   opt :force, "Update target even when source is older than target", :short => "f"
@@ -33,4 +33,3 @@ RGSS.serialize(projecttypes[opts[:project_type]],
                  :database => opts[:database]
                }
                )
-
